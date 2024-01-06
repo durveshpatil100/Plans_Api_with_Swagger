@@ -45,6 +45,8 @@ public class PlanController {
 			responseMsg = "Plan is not saved";
 		}
 
+		System.out.println("saveplan postmapping done");
+
 		return new ResponseEntity<>(responseMsg, HttpStatus.CREATED);
 	}
 
@@ -86,6 +88,8 @@ public class PlanController {
 		} else {
 			msg = "Plan Not Deleted";
 		}
+
+		System.out.println("deleplan deletemapping  done");
 		return new ResponseEntity<>(msg, HttpStatus.OK);
 	}
 	
